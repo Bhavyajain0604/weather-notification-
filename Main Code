@@ -40,5 +40,8 @@ def getWeather():
     except Exception asdit:
         messagebox.showerror("Weather App","Invalid Entry !!") 
 
+textfield=tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#484848",border=0,fg="white")
+textfield.place( x = 40,y = 40 )
+textfield.focus()
 
 
