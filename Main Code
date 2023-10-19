@@ -28,4 +28,20 @@ def getWeather():
         clock.config(text=current_time)
         name.config(text="CURRENT WEATHER")
 
+        #weather
+
+        api="https://api.openweathermap.org/data/3.0/onecall?lat="+city+"&appid=cf0833e315dc0fbec8baf38e4e8f36cf"
+        json_data=requests.get(api).json()
+        condition=json_data['weather'][0]['main']
+        description= json_data['weather'][0]['description']
+        temp=int(json_data['main']['temp' ]-273.15)
+        t.config(text=(temp, "°"))
+        c.config(text=(condition, "I", "FEELS", "LIKE", temp, "°"))
+    except Exception asdit:
+        messagebox.showerror("Weather App","Invalid Entry !!") 
+
+textfield=tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#484848",border=0,fg="white")
+textfield.place( x = 40,y = 40 )
+textfield.focus()
+
 
