@@ -87,7 +87,7 @@ frame_myimg.pack(side=BOTTOM)
 # Time
 name = tk.Label(root, font=("arial", 33, "bold"))
 name.place(x=480, y=150)
-clock = tk.Label(root, font=("arial", 25, "bold"))
+clock = tk.Label(root, font=("arial", 30, "bold"))
 clock.place(x=550, y=210)
 
 
