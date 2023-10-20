@@ -42,6 +42,7 @@ def getWeather():
         c.config(text=(condition, "I", "FEELS", "LIKE", temp, "°"))
     except Exception as e:
         messagebox.showerror("Weather App","Invalid Entry !!") 
+
 # Search Box
 Search_image =tk.PhotoImage(file="search_bar.png")
 myimage = tk.Label(image=Search_image)
@@ -65,6 +66,7 @@ myimage_icon = tk.Button(
     image=Search_icon, borderwidth=0, cursor="hand2", bg="#404040", command=getWeather
 )
 myimage_icon.place(x=400, y=34)
+
 # Resizing the image
 image = Image.open("logo.png")
 # Resize the image using resize() method
@@ -74,7 +76,7 @@ resize_image = image.resize((250, 250))
 Logo_image = ImageTk.PhotoImage(resize_image)
 logo = tk.Label(image=Logo_image)
 logo.size
-logo.place(x=325, y=165)
+logo.place(x=100, y=140)
 
 # Bottom Box
 Frame_image = tk.PhotoImage(file="box.png")
