@@ -38,8 +38,8 @@ def getWeather():
         condition=json_data['weather'][0]['main']
         description= json_data['weather'][0]['description']
         temp=int(json_data['main']['temp' ]-273.15)
-        t.config(text=(temp, "°"))
-        c.config(text=(condition, "I", "FEELS", "LIKE", temp, "°"))
+        t.config(text=(temp, "°C"))
+        c.config(text=(condition, "I", "FEELS", "LIKE", temp, "°C"))
     except Exception as e:
         messagebox.showerror("Weather App","Invalid Entry !!") 
 
