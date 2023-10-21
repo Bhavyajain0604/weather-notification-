@@ -85,9 +85,9 @@ frame_myimg.place(x=10, y=450)
 frame_myimg.pack(side=BOTTOM)
 
 # Time
-name = tk.Label(root, font=("arial", 33, "bold"))
+name = tk.Label(root, font=("Times New Roman", 33, "bold"))
 name.place(x=480, y=150)
-clock = tk.Label(root, font=("arial", 30, "bold"))
+clock = tk.Label(root, font=("Times New Roman", 30, "bold"))
 clock.place(x=550, y=210)
 
 
@@ -111,7 +111,7 @@ label1.place(x=620, y=510)
 # Temp and Condition
 temp = tk.Label(font=("Times New Roman", 65, "bold"), fg="#ee666d")
 temp.place(x=550, y=300)
-cond = tk.Label(font=("Times New Roman", 30, "bold"))
+cond = tk.Label(font=("Times New Roman", 27, "bold"))
 cond.place(x=400, y=400)
 
 
